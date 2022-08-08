@@ -55,8 +55,8 @@ print('Composing Email.')
 
 SERVER = 'smtp.gmail.com'  # your smtp server
 PORT = 587  # your port number
-FROM = '---------@gmail.com'  # from sender email
-TO = '------------@gmail.com'  # list of people to send it to
+FROM = '--------'  # from email
+TO = '---------'  # to email id
 PASS = '-----------'  # password.
 
 
