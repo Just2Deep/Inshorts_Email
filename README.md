@@ -1,6 +1,6 @@
 # Webscraping and Sending Mail
 
-#### This project extracts data from the Indian short news platform **Inshorts** and sends out the content and link to the page as an email automatically.
+## This project extracts data from the Indian short news platform **Inshorts** and sends out the content and link to the page as an email automatically.
 
-## you can fork the repository to send details of the top stories to your mail id by running the script.
+#### You can fork the repository to send details of the top stories to your mail id by running the script.
 ## Kindly modify the FROM, TO, PASS variables for your requirement.
