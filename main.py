@@ -57,7 +57,8 @@ SERVER = 'smtp.gmail.com'  # your smtp server
 PORT = 587  # your port number
 FROM = '--------'  # from email
 TO = '---------'  # to email id
-PASS = '-----------'  # password.
+# password.(since the changes from google for less secure apps, we can use app password for this)
+PASS = '-----------'
 
 
 # create text/plain message
