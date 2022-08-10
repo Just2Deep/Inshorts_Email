@@ -55,7 +55,7 @@ print('Composing Email.')
 
 SERVER = 'smtp.gmail.com'  # your smtp server
 PORT = 587  # your port number
-FROM = '--------'  # from email
+FROM = '--------'  # from email( This is mostly gmail account)
 TO = '---------'  # to email id
 # password.(since the changes from google for less secure apps, we can use app password for this)
 PASS = '-----------'
