@@ -6,6 +6,6 @@
 
 ## Kindly modify the FROM, TO, PASS variables to run this script in your system.
 
-## This is the sample of the final email received.
+## Sample of the final email received.
 
 ![Alt text](images/sample.jpg?raw=true "Sample")
