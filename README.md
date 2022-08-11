@@ -8,4 +8,4 @@
 
 ## This is the sample of the final email received.
 
-![Alt text](images\sample.jpg?raw=true "Sample")
+![Alt text](images/sample.jpg?raw=true "Sample")
