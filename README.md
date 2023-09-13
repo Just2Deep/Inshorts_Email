@@ -10,10 +10,6 @@
 
 ![Alt text](images/sample.jpg?raw=true "Sample")
 
-### Future Improvements
- - Make the process of scraping and sending a mail a daily process.
- - like a cron job with github actions to send a mail everyday.
-
 # TED Talk Downloader
 
 ### In this project we extract the downloadable mp4 link for the TED talk and download it
