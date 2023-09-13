@@ -9,12 +9,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3 # checkout the repository content to github runner
 
             - name: Set up Python
-              uses: actions/setup-python@v2
+              uses: actions/setup-python@v4 # latest actions repo for python
               with:
-                python-version: 3.11.5
+                python-version: '3.9' # install the python version needed
 
             - name: Install Dependencies
               run: pip install -r requirements.txt
