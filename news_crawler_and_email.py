@@ -10,20 +10,22 @@ from bs4 import BeautifulSoup  # web scraping
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from dotenv import load_dotenv
+from dotenv import dotenv_values
 
-load_dotenv()
+# load_dotenv()
 
 
 now = datetime.datetime.now()
 
 # email placeholder
 
+config = {**dotenv_values("sample.env"), **dotenv_values(".env"), **os.environ}
+
 BASE_URL = "https://www.inshorts.com/en/read"
 CONTENT_LINK_URL = "https://inshorts.com"
-FROM = os.environ["FROM"]  # email address of the sender
-TO = os.environ["TO"]  # email address of the receiver
-PASS = os.environ["PASS"]
+FROM = config["FROM"]  # email address of the sender
+TO = config["TO"]  # email address of the receiver
+PASS = config["PASS"]
 
 
 # Extracting News Stories
