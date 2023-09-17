@@ -23,3 +23,5 @@ pip install -r requirements.txt
 #### Sample of the final email received.
 
 ![Alt text](images/sample.jpg?raw=true "Sample")
+
+[![Automated web scraper](https://github.com/Just2Deep/Webscraping_and_sending_mail/actions/workflows/automation.yml/badge.svg)](https://github.com/Just2Deep/Webscraping_and_sending_mail/actions/workflows/automation.yml)
