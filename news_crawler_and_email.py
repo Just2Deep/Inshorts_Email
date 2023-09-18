@@ -12,8 +12,6 @@ from email.mime.text import MIMEText
 
 from dotenv import dotenv_values
 
-# load_dotenv()
-
 
 now = datetime.datetime.now()
 
@@ -51,8 +49,7 @@ def extract_news(url: str) -> str:
         str: returns the content in HTML format
     """
     print("Extracting stories from Inshorts")
-    cnt = ""
-    cnt += "<b>Inshorts Top Stories :</b>\n" + "<br>" + "-" * 80 + "<br><br>"
+    cnt = "<h1>Inshorts Top Stories</h1>"
 
     soup = scrape_html(url)
     title_attrs = {"itemprop": "headline"}
@@ -66,18 +63,11 @@ def extract_news(url: str) -> str:
     for title, body, link in zip(article_title, article_body, article_link):
         cnt += (
             (
-                "<b>"
+                "<h2>"
                 + title.text
-                + "</b>"
-                + " : "
-                + "<br><br>"
-                + body.text
-                + "\n"
-                + "<br><br>"
-                + f"<a href={link.get('itemid')}"
-                + "> Read more </a>"
-                + "<br><br>"
-                + "\n"
+                + "</h2>"
+                + f"<p>{body.text}</p>"
+                + f"<button><a href={link.get('itemid')}> Read more </a></button>"
             )
             if body.text != "Load More"
             else ""
@@ -88,10 +78,8 @@ def extract_news(url: str) -> str:
 
 
 def compose_html_for_mail(content: str) -> str:
-    content += "<br>------------------------------------------------------------------------------<br>"
-    # content += ('<br><br>End of Message<br><br>')
-    content += "Made with <3, Deep :)<br>"
-    content += "Thanks for reading!"
+    content += "<p>Made with <3, Thanks for reading!</p>"
+    content += "<p>Regards,<br>Deep :)</p>"
 
     return content
 
