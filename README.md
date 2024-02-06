@@ -20,6 +20,8 @@ pip install -r requirements.txt
 
 #### You can add your email details as .env, to send top stories to your email.
 
+Using Github actions to send our mail to receivers. ( we can improve the way we are processing the receiver list ).
+
 #### Sample of the final email received.
 
 ![Alt text](images/sample.jpg?raw=true "Sample")
