@@ -1,4 +1,4 @@
-# TED TALK video downloader script using python
+# TED TALK video downloader script using python.
 
 import requests  # for getting content
 from bs4 import BeautifulSoup  # webscraping for urls to download
